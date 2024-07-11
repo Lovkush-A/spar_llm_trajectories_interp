@@ -8,6 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 transformer-lens = "^2.1.0"
+ipykernel = "^6.29.5"
+cv = "^1.0.0"
+circuitsvis = "^1.43.2"
 
 
 [tool.poetry.group.dev.dependencies]
