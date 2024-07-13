@@ -1,7 +1,0 @@
-{
-    "model": "microsoft/Phi-3-mini-4k-instruct",
-    "temperature": 0.7,
-    "prompt": "Write a short blog post about a recipe and the inspiration behind it. Do not include a title. Only reveal the dish after the story. Start with a one, two or three paragraph story and then move to the recipe.",
-    "start": "",
-    "output": "Write a short blog post about a recipe and the inspiration behind it. Do not include a title. Only reveal the dish after the story. Start with a one, two or three paragraph story and then move to the recipe.\n\nRecipe: Vegetarian Paella - The Story of a Spanish-Inspired Dish\n\nI remember the first time I tasted paella. It was on a trip to Valencia, Spain with my family. The sun was shining, the streets were bustling, and the aroma of spices and seafood wafted through the air. We were invited to a local family's home for dinner, and as we sat down to enjoy our meal, I was struck by the vibrant colors and flavors of the paella. It was unlike any dish I had ever tasted before, and I knew right away that I wanted to recreate it for myself.\n\nSince then, I have experimented with different ingredients and variations of this classic Spanish dish. I wanted to create a vegetarian version that captured the essence of paella, but with a twist. After many trials and errors"
-}
