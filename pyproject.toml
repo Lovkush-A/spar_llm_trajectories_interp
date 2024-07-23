@@ -10,6 +10,7 @@ python = "^3.10"
 transformer-lens = "^2.1.0"
 ipykernel = "^6.29.5"
 cv = "^1.0.0"
+pip = "^24.1.2"
 circuitsvis = "^1.43.2"
 
 
