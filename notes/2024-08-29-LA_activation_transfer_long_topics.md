@@ -1,19 +1,12 @@
 # Notes on transferring longer topics
 
-Topic 1 always axe-throwing.
-Topic 2 some 'longer' topic.
-Looped through topic 2, created prompt to talk about each topic, generated once, split by the first new line (producing original prompt and original output), did transfer with `original prompt + \n\n` and generated 3 outputs.
+- Topic 1 always axe-throwing.
+- Topic 2 some 'longer' topic.
+- Looped through topic 2, created prompt to talk about each topic, generated once, split by the first new line (producing original prompt and original output), did transfer with `original prompt + \n\n` and generated 3 outputs.
 
 ## Thoughts on individual examples
 
-Notable examples
-
-- Traditional Japanese cuisine. This has multiple paragraphs for topic1. HOWEVER, the completion from the newline token had traditional japanese cuisine in all 3 completions!!
-- Blockchain technology uses. Similar to Traditional Jap cuisine! Except about blockchain technology, not its uses.
-- Renewable energy sources. All three started with some disclaimer about information should not be substituted for professional advice. And two then talked about renewable energy sources! Third about AI in healthcare.
-- Organic farming methods. Original output started 'World of organic farming'. The transferred outputs were way off: Twice had 'world of professional wrestling'. Once had 'process of making a good cup of coffee'
-
-Standard examples
+Standard examples. Transferred outputs usually capture part of the topic, not whole topic.
 
 - Ancient Greek philosophy. All outputs about Ancient Greek philosophERS instead
 - Sustainable architecture practices. All outputs about sustainable practices
@@ -48,13 +41,11 @@ Standard examples
 - Mindfulness meditation benefits. All start 'Mindfulness' without meditation and go on to discuss benefits.
 - Forensic science techniques. Forensic science.
 - Environmentally friendly transportation. 2 match, 1 about environmentally friendly practices.
-- Extreme sports safety. All start with 'Extreme', Two about extreme weather, one about extreme heat warnings
 - Alternative energy storage. Alternative energy sources.
 - Global trade agreements. Global trade.
 - Sustainable water management. Sustainable practices or sustainable agriculture.
 
-
-These topics had multiple paragraphs for topic1, messing up my basic logic to identify when topic changed.
+Axe-throwing had multiple paragraphs. This messed up my basic logic to identify the change of topic (which was searching for first new line) and so I was transferring from the wrong newline token.
 
 - Tropical fruit varieties
 - Electric car technology
@@ -64,6 +55,17 @@ These topics had multiple paragraphs for topic1, messing up my basic logic to id
 - Impressionist painting movement
 - Endangered language perservation
 - Neuroscience breakthrough discoveries
+
+Unusual and notable examples
+
+- Traditional Japanese cuisine. This has multiple paragraphs for topic1. HOWEVER, the completion from the newline token had traditional japanese cuisine in all 3 completions!!
+  - Blockchain technology uses. Same thing - newline was in middle of axe throwing paragraphs but transferred generation was not about axe throwing. Was about blockchain technology, (but not its uses).
+  - Extreme sports safety. Same thing again. Generations all start with 'Extreme', two about extreme weather, one about extreme heat warnings
+
+- Renewable energy sources. All three started with a disclaimer about information should not be substituted for professional advice. And two then talked about renewable energy sources! Third about AI in healthcare.
+
+- Organic farming methods. Original output started 'World of organic farming'. Two of the transferred outputs start 'World of professional wrestling'. But third generation started with something totally random: 'Process of making a good cup of coffee'
+  - Turns out if you search for 'Process of making' this turns up several other times and always in the examples where axe-throwing occupied multiple paragraphs and so I was transferring incorrect newline.
 
 ## Code used
 
