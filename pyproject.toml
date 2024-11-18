@@ -21,6 +21,9 @@ seaborn = "^0.13.2"
 circuitsvis = "^1.43.2"
 hqq = "^0.1.8"
 taker = "^1.0.5"
+phate = "^1.0.11"
+umap-learn = "^0.5.6"
+runipy = "^0.1.5"
 
 
 [tool.poetry.group.dev.dependencies]
