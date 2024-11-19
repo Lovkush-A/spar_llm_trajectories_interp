@@ -20,8 +20,12 @@ nbformat = "^5.10.4"
 seaborn = "^0.13.2"
 circuitsvis = "^1.43.2"
 hqq = "^0.1.8"
-nltk = "3.8.1" # fixed nltk version. version 3.8.2 not working with poetry for some reason
+
 taker = "^1.0.8"
+phate = "^1.0.11"
+umap-learn = "^0.5.6"
+runipy = "^0.1.5"
+nltk = "3.8.1" # fixed nltk version. version 3.8.2 not working with poetry for some reason
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
