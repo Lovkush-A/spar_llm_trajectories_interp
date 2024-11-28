@@ -5406,14 +5406,13 @@ widechars = ["wcwidth"]
 
 [[package]]
 name = "taker"
-version = "1.1.1"
-
+version = "1.1.4"
 description = "Tools for Transformer Activations Knowledge ExtRaction"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "taker-1.1.1-py3-none-any.whl", hash = "sha256:d59db74276e877ecefa27b7081043226889f993407ecca2685eadfc706ef5ca7"},
-    {file = "taker-1.1.1.tar.gz", hash = "sha256:c832ada52a4da50a0a48587f349a0729b553a7a97a0d9db181e998c46f929798"},
+    {file = "taker-1.1.4-py3-none-any.whl", hash = "sha256:b725d649f56ace657415cb1f2fed37140079142f24aa0bcc102120dc8aded2e3"},
+    {file = "taker-1.1.4.tar.gz", hash = "sha256:b9cfa8055a6e1d819e264d64324653900af6e3420cde4a78e9cd045f04e5e63a"},
 ]
 
 [package.dependencies]
@@ -5851,14 +5850,12 @@ wandb = ">=0.13.5"
 [[package]]
 name = "transformers"
 version = "4.44.2"
-
 description = "State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow"
 optional = false
 python-versions = ">=3.8.0"
 files = [
     {file = "transformers-4.44.2-py3-none-any.whl", hash = "sha256:1c02c65e7bfa5e52a634aff3da52138b583fc6f263c1f28d547dc144ba3d412d"},
     {file = "transformers-4.44.2.tar.gz", hash = "sha256:36aa17cc92ee154058e426d951684a2dab48751b35b49437896f898931270826"},
-
 ]
 
 [package.dependencies]
@@ -6575,5 +6572,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "b16f7163791c9abd8376744b25b2f912016822baa50420a62ffd63ca33bee8ef"
-
+content-hash = "e03e2b419d2d4915c9098c34e3ec8cb2ecb4182142a7a2d668768d087ba006f5"
